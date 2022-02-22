@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" href="https://katha190.000webhostapp.com/Eye%20Care/css/style.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://katha190.000webhostapp.com/Eye%20Care/css/style.css"> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Eye Info</title>
+  <link rel="shortcut icon" href="./1.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <a href="./index.html">
+      <div class="logo"><img src="./img/1.png" alt="image not found"></div>
+    </a>
+    <div class="companyname">
+      <p>Eye Care Information Centre</p>
+    </div>
+    <div class="kathalogo"><img src="./1.png" alt="image not found"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./findEyeSpecialist.html"><strong>Find an Eye Specialist</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./locateacenter.html"><strong>Locate a Centre</strong></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><strong>Eye Info</strong> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./activities.html"><strong>Class Activities</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./newtech.html"><strong>New Technology</strong></a>
+        </li>
+      </ul>
+      <button class="btn btn-warning px-4 py-2 mr-5" onclick="user()"><strong id="name">Appointment</strong></button>
+      <button class="btn btn-warning px-4 py-2 mr-5" onclick="check()"><strong>Check Here</strong></button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row featurette my-4">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 order-md-2">
+        <img src="./img/vision.jpg" width="100%" alt="" class="vision">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 m-auto">
+        <h2 class="text-center m-5 font-weight-bolder">Eye Problem (नेत्र दोष )</h2>
+      </div>
+    </div>
+    <div class="row featurette my-4">
+      <div class="col-md-6 m-auto order-md-2">
+        <h2 class="featurette-heading">Myopia ( मायोपिआ )
+        </h2>
+        <p class="lead mt-5 text-justify">इस दोष में दूर की वस्तुएँ स्पष्ट नहीं दिखाई देती है| अर्थात दूर-बिंन्दु अनन्त
+          से कम दुरी पर होता
+          है, अत: दूर स्थित वस्तु का प्रतिबिम्ब रेटिना(दुष्टि-पटल) से पहले बनता है| इस दोष को अपसारी(अवतल) concave
+          लेंसों के प्रयोग द्वारा दूर किया जाता है| मायोपिआ को निकट दृष्टी-दोष या निकट दृष्टिता भी कहते है|
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="size" src="./img/myophia.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-6 m-auto">
+        <h2 class="featurette-heading mb-5">Hyperopia ( हाइपरमेट्रोपिआ )
+        </h2>
+        <p class="lead text-justify">इसे दूर-दष्टिदोष अथवा दूर-दृष्टिता भी कहते है| इसमें पास की वस्तुएँ स्पष्ट नहीं
+          दिखाई देती है|
+          अर्थात निकट-बिंन्दु 25सेमी से अधिक दुरी पर होता है| अत: पास स्थित वस्तु का प्रतिबिम्ब रेटिना के पीछे बनता है|
+          इस दोष को चित्र 15.32 में दिखाए अनुसार अभिसारी(उत्तल) लेंस के उपोग द्वारा दूर किया जाता है|</p>
+      </div>
+      <div class="detail col-md-4">
+        <img src="./img/hyperopia.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row featurette my-4">
+      <div class="col-md-6 order-md-2">
+        <h2 class="featurette-heading mb-5">Presbyopia ( प्रेसबायोपिआ )
+        </h2>
+        <p class="lead text-justify">इस दोष में पास एवं दूर दोनों की ही वस्तुएं स्पष्ट नही दिखाई देती है| अर्थात्
+          दूर-बिन्दु अनन्त से कम दुरी पर तथा निकट-बिन्दू 25 cm से अधिक दुरी पर होता है| इसे या तो अलग-अलग चश्मों(लेंस)
+          का(एक मायोपिया एवं दूसरा हाइपरमेट्रोपिआ के लिए) उपयोग करके दूर किया जा सकता है, अथवा द्विफोकस-लेंस द्वारा भी
+          दूर की जा सकरा है| यह वृधावस्था में होने वाली एक बीमारी है|
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="./img/presbyopia.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-6 m-auto">
+        <h2 class="featurette-heading mb-5">Astigmatism ( एस्टीग्मेटीज्म )
+        </h2>
+        <p class="lead text-justify">यह नेत्र-लेंस की अपूर्ण गोलीय प्रकति के कारण होता है| नेत्र लेंस की फोकस दुरी दो
+          परस्पर लम्बवत
+          दिशाओ में अलग अलग हो जाती है| इसलिए वस्तुओ को दो दिशाओ में एक साथ नही देख सकते है|
+        </p>
+      </div>
+      <div class="detail col-md-4">
+        <img src="./img/Astigmatism.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 m-auto">
+        <h1 class="tech text-center mb-5">आँखों के रोग जो अंधेपन का कारण बन सकते हैं</h1>
+        <p class="text-justify lead">
+          1. ऑप्टिक न्युराइटिस(Opitc Neuritis)-यह आंखो में सूजन का एक प्रकार है जिससे आंशिक रूप से कुछ समय के लिए या फिर
+          हमेशा के लिए आंखो की रौशनी जा सकती है|
+          <br>
+          2. रेटिनाइटिस पिगमेंटोसा(Retinitis Pigmentosa)-रेटिना में किसी प्रकार की क्षति होने को रेटिनाइटिस पिगमेंटोसा
+          कहा जाता है| काफी दुर्लभ मामलों में ही इससे अंधेपन की दिक्कत होती है|
+
+          <br>
+          3. मोतियाबिंद-इसके कारण दृष्टी में धुंधलापन आ जाता है, वृध्द लोगों में यह काफी सामान्य होता है|
+          <br>
+          4. लेजी आई-इसे एम्बलाइयोपिया(Amblyopia)- या मंद दृष्टी के नाम से भी जाना जाता है| इसमें पीड़ित को सामने नजर आ
+          रही वस्तु या व्यक्ति का पूरा विवरण देखने में दिक्कत होती है| आगे जाकर इससे अंधापन भी हो सकता है|
+          <br>
+          5. ट्यूमर- आपकी रेटिना या आंख की नस को प्रभावित करने वाले ट्यूमर भी अंधापन का कारण बन सकते हैं|
+          <br>
+          6. ग्लूकोमा-ग्लूकोमा आंखों की नस को क्षतिग्रस्त कर सकती है| इन नसों की ही मदद से हम देखते हैं उसकी सुचना
+          मस्तिष्क तक पहुंचती है और हम जान पाते हैं की हमने क्या देखा| इन नसों के कारण भी अंधापन आ सकता है |
+          <br>
+          7. मैक्यूलर डिजनरेशन(Macular Degeneration)-आपकी आंखके उस भाग को नष्ट कर देता है जिससे आप किसी ऑब्जेक्ट को
+          डिटेल में देख सकते हैं|
+          <br>
+          8. डायबिटीज - से पीड़ित लोग भी अंधेपन की चपेट में आ सकते हैं|
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="tech text-center">New Technology For Surgery</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-8">
+        <h2 class="featurette-heading">Contoura vision surgery :–
+        </h2>
+        <p class="lead text-justify">यह सबसे आधुनिक तकनीक है यह सबसे सुरक्षित है और इसके द्वारा 6/6 vision को प्राप्त
+          किया जा सकता है
+          | यह topography के सिधांत पर काम करती है इसमें कॉर्निया के 22000 बिन्दुओं की बारीकी से जाँच की जाती है इसके
+          द्वारा visual vision and cornea करेक्शन दोनों किये जाते है और यह किसी भी अन्य laser द्वारा संभव नहीं है | यह
+          18 वर्ष से कम उम्र के लोगो की नहीं की जा सकती |
+          यह तकनीक Eye 7 के laser surgeon Dr. Rahil Chaudhary ने 2 वर्ष पहले भारत मे launch किया था.
+        </p>
+      </div>
+      <div class="detail col-md-4">
+        <img src="./img/contoura vision.png">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row featurette my-4">
+      <div class="col-md-8 order-md-2">
+        <h2 class="featurette-heading">Laser surgery:–
+        </h2>
+        <p class="lead"> लेसर सर्जरी के द्वारा रेटिना ट्रीटमेंट और फोकल लेज़र ट्रीटमेंट किया जाता है: यह किसी भी उम्र के
+          लोगों की की जाती है | <br>
+
+          <strong class="strong">रेटिना ट्रीटमेंट :-</strong>
+          इस ट्रीटमेंट मे मैकयुला और उसके आस पास की रक्त वाहिनियों को ठीक किया जाता है | इसे इंट्रा
+          विट्रल इंजेक्शन के द्वारा किया जाता है | <br>
+          <strong class="strong">फोकल लेज़र ट्रीटमेंट:-</strong>
+          इसमें मैकयुला की सूजन को कम किया जाता है | इसमें macula पर जमे तरल को निकाल दिया जाता है
+          | इस क्रिया को विटरेक्टोमी कहा जाता है |
+
+          IVI ( intra vitral injection): इसमें topical anesthesia देकर मोतियाबिंद और ग्लूकोमा का इलाज किया जाता है |
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="./img/lasik surgeon.jpg">
+      </div>
+    </div>
+  </div> -->
+  <script src="./js/appointment.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f1379583c7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

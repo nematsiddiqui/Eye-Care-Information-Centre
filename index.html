@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="https://katha190.000webhostapp.com/Eye%20Care/css/style.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://katha190.000webhostapp.com/Eye%20Care/css/style.css"> -->
+  <title>Eye Care Information Centre</title>
+  <link rel="shortcut icon" href="./1.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo"><img src="./img/1.png" alt="image not found"></div>
+    <div class="companyname">
+      <p>Eye Care Information Centre</p>
+    </div>
+    <div class="kathalogo"><img src="./1.png" alt="image not found"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./findEyeSpecialist.html"><strong>Find an Eye Specialist</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./locateacenter.html"><strong>Locate a Centre</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Eyeinfo.html"><strong>Eye Info</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./activities.html"><strong>Class Activities</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./newtech.html"><strong>New Technology</strong></a>
+        </li>
+      </ul>
+      <button class="btn btn-warning px-4 py-2 mr-5" onclick="user()"><strong id="name">Appointment</strong></button>
+      <button class="btn btn-warning px-4 py-2 mr-5" onclick="check()"><strong>Check Here</strong></button>
+    </div>
+  </nav>
+  <!-- Login Modal-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Check Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <!-- login with google start -->
+
+              <div class="google-btn">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                </div>
+                <p class="btn-text"><b style="
+          display: block;
+          padding: 8px 0px;position: relative;
+    bottom: 2px;">Sign in with google</b></p>
+              </div>
+              <!-- login with google end code -->
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="login" onclick="user()">Check Appointment</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sign up modal-->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get an Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" required>
+              <!-- <small id="emailHelp" class="form-text text-muted"</small> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputcPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputcPassword1" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="submit" onclick="user()">Get Appointment</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Slider code-->
+  <!-- Start WOWSlider.com BODY section -->
+
+  <div class="slider">
+    <div id="wowslider-container1">
+      <div class="ws_images">
+        <ul>
+          <li><img src="data1/images/1.jpg" alt="" title="" id="wows1_0" /></li>
+          <li><img src="data1/images/2.jpg" alt="2" title="" id="wows1_1" /></li>
+          <li><img src="data1/images/3.jpg" alt="3" title="" id="wows1_2" /></li>
+          <li><a href="http://wowslider.net"><img src="data1/images/4.jpg" alt="bootstrap carousel" title=""
+                id="wows1_3" /></a></li>
+          <li><img src="data1/images/5.jpg" alt="5" title="" id="wows1_4" /></li>
+        </ul>
+      </div>
+      <div class="ws_bullets">
+        <div>
+          <a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1" />1</span></a>
+          <a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2" />2</span></a>
+          <a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3" />3</span></a>
+          <a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4" />4</span></a>
+          <a href="#" title="5"><span><img src="data1/tooltips/5.jpg" alt="5" />5</span></a>
+        </div>
+      </div>
+      <div class="ws_script" style="position:absolute;left:-99%"></div>
+      <div class="ws_shadow"></div>
+    </div>
+  </div>
+  <!-- End WOWSlider.com BODY section -->
+  <!-- Blog -->
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static cardcolor">
+            <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+            <h3 class="mb-0 line"> LASIK Eye Surgery</h3><br>
+            <p class="card-text mb-auto text-justify"> LASIK surgery offers an alternative that can give you a clear vision again. <br><strong>Click below to watch video </strong> </p>
+            <a href="./video/lasik.mp4" class="stretched-link"><button type="button"
+                class="btn btn-primary">Learn More</button></a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./img/lasik surgeon.jpg" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 m-auto">
+        <video width="500" height="240" controls>
+          <source src="./video/lasik.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <video width="500" height="240" controls>
+          <source src="./video/contoura.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static cardcolor">
+            <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+            <h4 class="mb-0 line line2">Contoura Vision Surgery</h4>
+            <p class="card-text mb-auto text-justify">Contoura Vision is the latest advancement in Specs Removal by Laser Vision Correction. <br><strong>Click below to watch video </strong></p>
+            <a href="https://www.youtube.com/watch?v=C8TZZfSw7Ls" class="stretched-link"><button type="button" class="btn btn-primary">Learn More</button></a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./img/contoura vision.png" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static cardcolor">
+            <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+            <h3 class="mb-0 line"> Student Activity</h3><br>
+            <p class="card-text mb-auto text-justify"> Strengthen eye muscles, concentration on focus, and vision sharpness. <br><strong>Click below to watch video </strong> </p>
+            <a href="./video/student.mp4" class="stretched-link"><button type="button"
+                class="btn btn-primary">Learn More</button></a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./img/4.jpg" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 m-auto">
+        <video width="500" height="240" controls>
+          <source src="./video/student.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/f1379583c7.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>-->
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+  <script src="./js/appointment.js"></script>
+</body>
+
+</html>
